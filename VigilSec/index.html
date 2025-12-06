@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VigilSec - Soluções profissionais de cibersegurança. Protegendo ativos digitais com pentest, SOC, monitoramento e consultoria estratégica.">
+    <title>VigilSec - Cibersegurança Profissional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a class="brand" href="#home">VigilSec</a>
+            <nav class="nav" id="nav">
+                <a href="#home">Início</a>
+                <a href="#services">Serviços</a>
+                <a href="#about">Sobre</a>
+                <a href="#contact">Contato</a>
+            </nav>
+            <button id="menuBtn" class="menu-btn" aria-label="Abrir menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <h1>Protegendo Ativos Digitais.<br>Minimizando Riscos.<br>Maximizando Confiança.</h1>
+                    <p class="lead">Soluções profissionais de cibersegurança — pentest, SOC, monitoramento e consultoria estratégica para seu negócio.</p>
+                    <div class="cta">
+                        <a class="btn primary" href="#contact">Solicitar Proposta</a>
+                        <a class="btn ghost" href="#services">Nossos Serviços</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="security-icon">🛡️</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos Serviços</h2>
+                    <p class="subtitle">Cobertura completa para prevenção, detecção e resposta a incidentes de cibersegurança.</p>
+                </div>
+                <div id="servicesGrid" class="grid"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>Sobre a VigilSec</h2>
+                    <p class="about-text">Somos uma empresa especializada em cibersegurança com foco em empresas que desejam proteger dados, infraestrutura e reputação. Aplicamos práticas de mercado, padrões ISO e frameworks reconhecidos para reduzir exposição a riscos digitais.</p>
+                    <ul class="bullets">
+                        <li>
+                            <span class="icon">✓</span>
+                            <div>
+                                <strong>Equipe Certificada</strong>
+                                <p>OSCP, CISSP, CompTIA Security+ e outras certificações reconhecidas</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon">✓</span>
+                            <div>
+                                <strong>Metodologias Comprovadas</strong>
+                                <p>Relatórios acionáveis baseados em frameworks internacionais</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon">✓</span>
+                            <div>
+                                <strong>Atendimento 24/7</strong>
+                                <p>Suporte contínuo em planos gerenciados de segurança</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Entre em Contato</h2>
+                    <p class="subtitle">Solicite uma avaliação ou peça uma proposta técnica personalizada para sua empresa.</p>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <label>
+                        <span>Nome Completo</span>
+                        <input type="text" name="name" required placeholder="Seu nome" />
+                    </label>
+                    <label>
+                        <span>Email Corporativo</span>
+                        <input type="email" name="email" required placeholder="seu@email.com" />
+                    </label>
+                    <label>
+                        <span>Empresa</span>
+                        <input type="text" name="company" placeholder="Nome da sua empresa" />
+                    </label>
+                    <label>
+                        <span>Telefone</span>
+                        <input type="tel" name="phone" placeholder="(00) 00000-0000" />
+                    </label>
+                    <label class="full-width">
+                        <span>Mensagem</span>
+                        <textarea name="message" rows="5" required placeholder="Descreva suas necessidades de segurança..."></textarea>
+                    </label>
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Enviar Mensagem</button>
+                        <button type="reset" class="btn ghost">Limpar Formulário</button>
+                    </div>
+                </form>
+                <div id="formMessage" class="form-message" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> VigilSec — Todos os direitos reservados.</p>
+            <div class="socials">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="Email">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

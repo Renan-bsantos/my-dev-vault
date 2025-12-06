@@ -1,0 +1,60 @@
+{
+  "company": "VigilSec",
+  "tagline": "Protegendo ativos digitais",
+  "services": [
+    {
+      "id": "pentest",
+      "title": "Teste de Intrusão (Pentest)",
+      "summary": "Avaliação técnica completa para identificar vulnerabilidades em aplicações web, APIs, infraestruturas e redes. Simulamos ataques reais para encontrar falhas antes que criminosos as explorem.",
+      "range": "Escopo: Aplicações Web, APIs REST/GraphQL, Infraestrutura Cloud, Red Team"
+    },
+    {
+      "id": "soc",
+      "title": "SOC Gerenciado 24/7",
+      "summary": "Centro de Operações de Segurança com monitoramento contínuo, detecção proativa de ameaças e resposta rápida a incidentes. Proteção em tempo real para sua infraestrutura.",
+      "range": "Níveis: Tier 1, 2 e 3 | SIEM, SOAR, Threat Hunting"
+    },
+    {
+      "id": "consultoria",
+      "title": "Consultoria e Governança",
+      "summary": "Avaliação de maturidade em segurança, desenvolvimento de políticas, conformidade regulatória (ISO 27001, PCI-DSS, LGPD) e roadmap estratégico personalizado.",
+      "range": "ISO 27001, PCI-DSS, LGPD, NIST, CIS Controls"
+    },
+    {
+      "id": "forensics",
+      "title": "Resposta a Incidentes & Forensics",
+      "summary": "Análise forense digital para entender a causa raiz de incidentes, contenção imediata de ameaças e recuperação segura de operações. Atendimento emergencial 24/7.",
+      "range": "Atendimento emergencial, investigação técnica, recuperação de dados"
+    },
+    {
+      "id": "threatintel",
+      "title": "Threat Intelligence",
+      "summary": "Coleta, análise e aplicação de inteligência sobre ameaças cibernéticas. Antecipe ataques, identifique padrões de atacantes e fortaleça suas defesas com informações estratégicas.",
+      "range": "Feeds de inteligência, análise de malware, relatórios táticos e estratégicos"
+    },
+    {
+      "id": "vulnerability",
+      "title": "Gestão de Vulnerabilidades",
+      "summary": "Programa contínuo de identificação, classificação e correção de vulnerabilidades. Scans automatizados, priorização baseada em risco e acompanhamento de correções.",
+      "range": "SAST, DAST, SCA, gestão de patches, relatórios de compliance"
+    },
+    {
+      "id": "awareness",
+      "title": "Treinamento e Conscientização",
+      "summary": "Programas de educação em segurança para equipes, simulacros de phishing, workshops técnicos e campanhas de conscientização para reduzir o fator humano como vetor de ataque.",
+      "range": "Phishing simulado, workshops, e-learning, gamificação"
+    },
+    {
+      "id": "cloud",
+      "title": "Segurança em Cloud",
+      "summary": "Proteção completa para ambientes AWS, Azure e GCP. Configuração segura, monitoramento de configurações, gestão de identidades e compliance em nuvem.",
+      "range": "AWS, Azure, GCP | CSPM, IAM, Cloud Security Posture"
+    },
+    {
+      "id": "devsecops",
+      "title": "DevSecOps e Segurança de Aplicações",
+      "summary": "Integração de segurança no ciclo de desenvolvimento. Análise estática e dinâmica de código, testes de segurança automatizados e cultura de segurança no desenvolvimento.",
+      "range": "SAST, DAST, IAST, SCA, CI/CD Security, Secure Code Review"
+    }
+  ]
+}
