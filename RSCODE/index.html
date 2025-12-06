@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ⚠️ PERSONALIZAR: Ajuste o título e descrição para SEO -->
+    <meta name="description" content="RSCodes - Desenvolvedor Front-End criando sites modernos, landing pages e portfólios profissionais. Soluções web responsivas e otimizadas.">
+    <title>RSCodes | Desenvolvedor Front-End</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="logo-svg" width="40" height="40" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="navLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="90" fill="url(#navLogoGradient)" opacity="0.2"/>
+                    <path d="M 60 40 L 60 160 L 100 160 L 100 120 L 120 120 L 140 100 L 120 80 L 100 80 L 100 40 Z" fill="url(#navLogoGradient)"/>
+                    <path d="M 80 100 L 100 100 L 115 85 L 100 70 L 80 70 Z" fill="white" opacity="0.9"/>
+                    <path d="M 130 60 L 150 80 L 130 100 L 150 120 L 130 140" stroke="url(#navLogoGradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <path d="M 170 60 L 150 80 L 170 100 L 150 120 L 170 140" stroke="url(#navLogoGradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+                <span class="logo-text">RSCodes</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <!-- ⚠️ PERSONALIZAR: Ajuste o título e subtítulo se desejar -->
+                <h1 class="hero-title">
+                    <span class="title-line">Transformando</span>
+                    <span class="title-line highlight">Ideias em</span>
+                    <span class="title-line">Experiências Digitais</span>
+                </h1>
+                <p class="hero-subtitle">Desenvolvedor front-end apaixonado por criar sites modernos, responsivos e com design profissional. Transformando suas ideias em realidade digital com código limpo e soluções inovadoras!</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn btn-primary">Começar Projeto</a>
+                    <a href="#servicos" class="btn btn-secondary">Ver Serviços</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-icon">🎨</div>
+                    <div class="card-text">Design</div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-text">Performance</div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">📱</div>
+                    <div class="card-text">Responsivo</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">O que ofereço</span>
+                <h2 class="section-title">Meus Serviços</h2>
+                <p class="section-description">Soluções completas para sua presença digital</p>
+            </div>
+            
+            <div class="cards-grid">
+                <!-- ⚠️ PERSONALIZAR: Ajuste os serviços conforme suas ofertas -->
+                <div class="service-card" data-aos="fade-up">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-bg"></div>
+                        <span class="card-icon-emoji">🚀</span>
+                    </div>
+                    <h3>Landing Page Profissional</h3>
+                    <p>Criação de landing pages modernas e atrativas para capturar a atenção dos visitantes e aumentar suas conversões. Design limpo e profissional.</p>
+                    <ul class="card-features">
+                        <li>✓ Design responsivo (mobile, tablet e desktop)</li>
+                        <li>✓ Formulários de contato integrados</li>
+                        <li>✓ Animações e efeitos visuais</li>
+                        <li>✓ Otimização básica de SEO</li>
+                        <li>✓ Entrega rápida e suporte</li>
+                    </ul>
+                    <div class="card-hover-effect"></div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-bg"></div>
+                        <span class="card-icon-emoji">🎯</span>
+                    </div>
+                    <h3>Portfólio Pessoal</h3>
+                    <p>Desenvolvimento de portfólio personalizado para destacar seus projetos e trabalhos. Ideal para designers, fotógrafos, desenvolvedores e profissionais criativos.</p>
+                    <ul class="card-features">
+                        <li>✓ Galeria de projetos com imagens</li>
+                        <li>✓ Seção sobre você</li>
+                        <li>✓ Formulário de contato</li>
+                        <li>✓ Design único e personalizado</li>
+                        <li>✓ Fácil de atualizar</li>
+                    </ul>
+                    <div class="card-hover-effect"></div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-bg"></div>
+                        <span class="card-icon-emoji">🏢</span>
+                    </div>
+                    <h3>Site Institucional</h3>
+                    <p>Criação de site para sua empresa ou negócio com páginas principais, informações sobre serviços e formas de contato. Presença profissional na web.</p>
+                    <ul class="card-features">
+                        <li>✓ Página inicial impactante</li>
+                        <li>✓ Páginas de serviços/produtos</li>
+                        <li>✓ Página sobre a empresa</li>
+                        <li>✓ Formulário de contato</li>
+                        <li>✓ Design profissional e moderno</li>
+                    </ul>
+                    <div class="card-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Meus trabalhos</span>
+                <h2 class="section-title">Portfólio</h2>
+                <p class="section-description">Projetos desenvolvidos durante minha jornada de aprendizado em desenvolvimento front-end</p>
+        </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="fade-up">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <span class="placeholder-icon">🌱</span>
+                            <p>Imersão Dev</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Base de Conhecimento - Tecnologias Sustentáveis</h3>
+                            <p>Aplicação web interativa desenvolvida na Imersão Dev da Alura. Base de conhecimento sobre 33 tecnologias sustentáveis com busca inteligente, interface moderna e totalmente responsiva.</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>JSON</span>
+                                <span>Fetch API</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/Renan-bsantos/Imers-o-Dev" class="portfolio-link" target="_blank" rel="noopener">
+                                    <span>🔗</span> Ver Código
+                                </a>
+                                <a href="https://github.com/Renan-bsantos/Imers-o-Dev" class="portfolio-link portfolio-link-secondary" target="_blank" rel="noopener">
+                                    <span>📂</span> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Base de Conhecimento - Tecnologias Sustentáveis</h3>
+                        <p>Aplicação web interativa com 33 tecnologias sustentáveis</p>
+                        <div class="portfolio-tech-preview">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <span class="placeholder-icon">💻</span>
+                            <p>RSCodes</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>RSCodes - Site Portfólio</h3>
+                            <p>Site portfólio profissional com design moderno, animações suaves, seções de serviços, projetos, depoimentos e formulário de contato totalmente funcional.</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>SVG</span>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/Renan-bsantos" class="portfolio-link" target="_blank" rel="noopener">
+                                    <span>🔗</span> Ver Código
+                                </a>
+                                <a href="https://github.com/Renan-bsantos" class="portfolio-link portfolio-link-secondary" target="_blank" rel="noopener">
+                                    <span>📂</span> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>RSCodes - Site Portfólio</h3>
+                        <p>Site portfólio profissional com design moderno</p>
+                        <div class="portfolio-tech-preview">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <span class="placeholder-icon">🚀</span>
+                            <p>Projetos</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Mais Projetos em Desenvolvimento</h3>
+                            <p>Estou sempre trabalhando em novos projetos para expandir minhas habilidades e criar soluções inovadoras. Novos projetos serão adicionados em breve!</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/Renan-bsantos" class="portfolio-link" target="_blank" rel="noopener">
+                                    <span>🔗</span> Ver GitHub
+                                </a>
+                                <a href="https://github.com/Renan-bsantos?tab=repositories" class="portfolio-link portfolio-link-secondary" target="_blank" rel="noopener">
+                                    <span>📂</span> Repositórios
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Mais Projetos em Desenvolvimento</h3>
+                        <p>Novos projetos sendo desenvolvidos constantemente</p>
+                        <div class="portfolio-tech-preview">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <span class="placeholder-icon">📚</span>
+                            <p>Aprendizado</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Projetos de Aprendizado</h3>
+                            <p>Desenvolvendo projetos práticos para aprender novas tecnologias e melhorar minhas habilidades em front-end. Cada projeto é uma oportunidade de crescimento!</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Git</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/Renan-bsantos" class="portfolio-link" target="_blank" rel="noopener">
+                                    <span>🔗</span> Ver GitHub
+                                </a>
+                                <a href="https://www.linkedin.com/in/renanbnsantos/" class="portfolio-link portfolio-link-secondary" target="_blank" rel="noopener">
+                                    <span>💼</span> LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Projetos de Aprendizado</h3>
+                        <p>Projetos práticos para expandir conhecimentos</p>
+                        <div class="portfolio-tech-preview">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre-content">
+                <div class="sobre-text" data-aos="fade-right">
+                    <span class="section-tag">Sobre mim</span>
+                    <h2 class="section-title">Desenvolvedor Front-End</h2>
+                    <p>Olá! Sou Renan, desenvolvedor front-end apaixonado por criar sites modernos, responsivos e com design profissional. Estou sempre aprendendo novas tecnologias e melhorando minhas habilidades através de projetos práticos e desafios reais.</p>
+                    <p>Meu foco está em criar experiências web excepcionais, com código limpo, organizado e seguindo as melhores práticas do mercado. Acredito que a prática constante, o aprendizado contínuo e a atenção aos detalhes são essenciais para entregar projetos de qualidade.</p>
+                    <p>Estou sempre aberto a novos projetos e oportunidades de aprendizado. Se você tem uma ideia ou precisa de um site profissional, vamos conversar e transformar sua visão em realidade digital!</p>
+                    <!-- ⚠️ PERSONALIZAR: Ajuste os números conforme sua experiência real -->
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-label">Projetos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="8">0</div>
+                            <div class="stat-label">Clientes Satisfeitos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="1">0</div>
+                            <div class="stat-label">Ano de Experiência</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ⚠️ PERSONALIZAR: Ajuste as tecnologias conforme suas habilidades -->
+                <div class="sobre-visual" data-aos="fade-left">
+                    <div class="tech-stack">
+                        <div class="tech-item">HTML5</div>
+                        <div class="tech-item">CSS3</div>
+                        <div class="tech-item">JavaScript</div>
+                        <div class="tech-item">Git & GitHub</div>
+                        <div class="tech-item">Responsive Design</div>
+                        <div class="tech-item">UI/UX Design</div>
+                    </div>
+                    <div class="learning-section">
+                        <h3>Estudando atualmente:</h3>
+                        <div class="learning-items">
+                            <span class="learning-badge">React</span>
+                            <span class="learning-badge">TypeScript</span>
+                            <span class="learning-badge">Frameworks CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">O que dizem</span>
+                <h2 class="section-title">Depoimentos</h2>
+                <p class="section-description">Feedback de clientes e pessoas que trabalharam comigo</p>
+        </div>
+
+            <!-- ⚠️ PERSONALIZAR: Substitua pelos depoimentos reais dos seus clientes quando tiver -->
+            <div class="depoimentos-grid">
+                <div class="depoimento-card" data-aos="fade-up">
+                    <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="depoimento-text">"Trabalho excelente! O desenvolvedor foi muito atencioso, entregou o projeto no prazo e ficou exatamente como eu queria. Recomendo!"</p>
+                    <div class="depoimento-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <!-- ⚠️ ALTERAR: Nome real do cliente -->
+                            <h4>Maria Silva</h4>
+                            <!-- ⚠️ ALTERAR: Tipo de projeto realizado -->
+                            <p>Cliente - Landing Page</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depoimento-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="depoimento-text">"Ficou muito bom! O site está responsivo, carrega rápido e o design ficou profissional. Superou minhas expectativas."</p>
+                    <div class="depoimento-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <!-- ⚠️ ALTERAR: Nome real do cliente -->
+                            <h4>João Santos</h4>
+                            <!-- ⚠️ ALTERAR: Tipo de projeto realizado -->
+                            <p>Cliente - Site Institucional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depoimento-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="depoimento-text">"Adorei meu novo portfólio! Ficou moderno, fácil de navegar e consegui destacar meus trabalhos perfeitamente. Muito obrigada!"</p>
+                    <div class="depoimento-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <!-- ⚠️ ALTERAR: Nome real do cliente -->
+                            <h4>Ana Costa</h4>
+                            <!-- ⚠️ ALTERAR: Tipo de projeto realizado -->
+                            <p>Cliente - Portfólio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Entre em contato</span>
+                <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
+                <p class="section-description">Estou pronto para transformar sua ideia em realidade</p>
+            </div>
+
+            <div class="contato-content">
+                <!-- ⚠️⚠️⚠️ IMPORTANTE: SUBSTITUA TODOS OS DADOS ABAIXO PELOS SEUS DADOS REAIS ⚠️⚠️⚠️ -->
+                <div class="contato-info" data-aos="fade-right">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>contato@rnscodes.dev</p>
+                        <small>Respondo em até 24 horas</small>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h3>WhatsApp</h3>
+                        <p>Entre em contato via email</p>
+                        <small>Ou através das redes sociais</small>
+                    </div>
+                    <!-- ⚠️ ALTERAR: Coloque sua cidade/estado ou mantenha "Brasil" -->
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Localização</h3>
+                        <p>Brasil</p>
+                        <small>Trabalho remotamente</small>
+                    </div>
+                    <!-- ⚠️ ALTERAR: Ajuste o horário conforme sua disponibilidade -->
+                    <div class="info-card">
+                        <div class="info-icon">⏰</div>
+                        <h3>Horário de Atendimento</h3>
+                        <p>Segunda a Sexta</p>
+                        <small>9h às 18h (horário de Brasília)</small>
+                    </div>
+                    <!-- ⚠️ ALTERAR: Coloque os links reais das suas redes sociais -->
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/renanbnsantos/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="https://github.com/Renan-bsantos" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                        <a href="https://rnscodes.dev" class="social-link" target="_blank" rel="noopener" aria-label="Website">Website</a>
+                    </div>
+                </div>
+
+                <form class="contato-form" id="contatoForm" data-aos="fade-left">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <span class="input-focus"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="input-focus"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone">
+                        <span class="input-focus"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="landing-page">Landing Page</option>
+                            <option value="portfolio">Portfólio</option>
+                            <option value="site-institucional">Site Institucional</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                        <span class="input-focus"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        <span class="input-focus"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Enviar Mensagem</span>
+                        <div class="btn-loader"></div>
+                    </button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-svg" width="32" height="32" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="100" cy="100" r="90" fill="url(#footerLogoGradient)" opacity="0.2"/>
+                            <path d="M 60 40 L 60 160 L 100 160 L 100 120 L 120 120 L 140 100 L 120 80 L 100 80 L 100 40 Z" fill="url(#footerLogoGradient)"/>
+                            <path d="M 80 100 L 100 100 L 115 85 L 100 70 L 80 70 Z" fill="white" opacity="0.9"/>
+                            <path d="M 130 60 L 150 80 L 130 100 L 150 120 L 130 140" stroke="url(#footerLogoGradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M 170 60 L 150 80 L 170 100 L 150 120 L 170 140" stroke="url(#footerLogoGradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                        <span class="logo-text">RSCodes</span>
+                    </div>
+                    <p>Desenvolvedor front-end criando sites modernos e responsivos. Transformando ideias em experiências digitais incríveis!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#servicos">Landing Pages</a></li>
+                        <li><a href="#servicos">Portfólios</a></li>
+                        <li><a href="#servicos">Sites Institucionais</a></li>
+                    </ul>
+                </div>
+                <!-- ⚠️ ALTERAR: Coloque os links reais das suas redes sociais -->
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/renanbnsantos/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://github.com/Renan-bsantos" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://rnscodes.dev" target="_blank" rel="noopener">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RSCodes. Todos os direitos reservados. | Feito com ❤️ e muito café ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- 
+    ╔══════════════════════════════════════════════════════════╗
+    ║                                                          ║
+    ║   ✨ RSCodes Portfolio - Made with Love & Coffee ☕     ║
+    ║                                                          ║
+    ║   🎨 Design: Modern & Professional                      ║
+    ║   💻 Code: Clean & Optimized                            ║
+    ║   🚀 Performance: Fast & Smooth                         ║
+    ║   💫 Animations: Sweet & Interactive                     ║
+    ║                                                          ║
+    ║   Developed by: Renan Santos                            ║
+    ║   Year: 2025                                             ║
+    ║                                                          ║
+    ║   💚 Thanks for visiting!                               ║
+    ║                                                          ║
+    ╚══════════════════════════════════════════════════════════╝
+    -->
+</body>
+</html>
