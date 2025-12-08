@@ -51,10 +51,6 @@ site/
 - JavaScript (Vanilla)
 - SVG para logos e ícones
 
-## 📝 Personalização
-
-Para personalizar ainda mais o site, consulte o arquivo `INSTRUCOES_PERSONALIZACAO.md` que contém todas as instruções detalhadas.
-
 ## 📄 Licença
 
 © 2025 RSCodes. Todos os direitos reservados.
@@ -62,4 +58,5 @@ Para personalizar ainda mais o site, consulte o arquivo `INSTRUCOES_PERSONALIZAC
 ---
 
 Desenvolvido com ❤️ e muito café ☕
+
 
