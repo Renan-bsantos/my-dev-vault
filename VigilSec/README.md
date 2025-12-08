@@ -19,7 +19,7 @@ O VigilSec é uma página web institucional que apresenta os serviços de cibers
 
 - **HTML5** - Estrutura semântica e acessível
 - **CSS3** - Design moderno com variáveis CSS, gradientes e animações
-- **JavaScript (Vanilla)** - Interatividade e manipulação do DOM
+- **JavaScript** - Interatividade e manipulação do DOM
 - **JSON** - Dados dinâmicos dos serviços
 
 ## ✨ Funcionalidades
@@ -140,4 +140,5 @@ Para mais informações sobre os serviços, utilize o formulário de contato no 
 ---
 
 **Desenvolvido com foco em segurança, performance e experiência do usuário.** 🛡️
+
 
